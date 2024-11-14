@@ -5,11 +5,11 @@ import { IoBagOutline } from "react-icons/io5";
 
 export default function Header() {
   return (
-    <nav className="  bg-slate-600">
+    <nav className="  bg-slate-600 relative top-0">
       <div id="nav-content" className="px-[22px] mx-[256px] h-[44px] ">
         <ul className="flex flex-row text-black justify-between h-full items-center gap-2">
           <li>
-            <FaApple className="text-[rgba(0,0,0,0.8)] text-[20px] align-middle leading-[50px]" />
+            <FaApple className="text-[rgba(0,0,0,0.8)] text-[20px]  align-middle leading-[50px]" />
           </li>
           <li>
             <a href="#" className="px-[8px]">

@@ -31,3 +31,16 @@ ul li {
   overflow: hidden;
   white-space: nowrap;
 }
+
+.headline {
+  font-size: 56px;
+  line-height: 1.07143;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+}
+
+#holiday-picture {
+  background: url("/apple_holiday.jpg");
+}
