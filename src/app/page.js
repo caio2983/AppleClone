@@ -4,6 +4,7 @@ import Image from "next/image";
 import Header from "./components/Header/header";
 import HolidayBlock from "./components/HolidayBlock/holiday";
 import { useEffect, useState } from "react";
+import React from "react";
 
 export default function Home() {
   return (
