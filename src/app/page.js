@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Header from "./components/header";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   return (
@@ -14,14 +17,10 @@ export default function Home() {
             src="apple_vid_holiday.mp4"
             className="scale-[1.55] absolute top-[100px]"
             autoPlay
-            loop
+            loop={false}
             muted
+            disablePictureInPicture
           ></video>
-          {/* 
-          <img
-            src="apple_holiday.jpg"
-            className="  scale-[1.55] absolute top-[100px]   "
-          ></img> */}
         </div>
 
         <div
