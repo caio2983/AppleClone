@@ -15,6 +15,7 @@ export default function HolidayBlock() {
           loop={false}
           muted
           disablePictureInPicture
+          role="video"
         ></video>
       </div>
 
