@@ -12,10 +12,8 @@ export default function Home() {
     <div className="  max-w-[100vw] ">
       <Header></Header>
       <HolidayBlock></HolidayBlock>
-      <div id="iphone-blocks" className="flex flex-col gap-[16px]">
-        <IphoneBlock></IphoneBlock>
-        <IphoneBlock></IphoneBlock>
-      </div>
+
+      <IphoneBlock></IphoneBlock>
     </div>
   );
 }

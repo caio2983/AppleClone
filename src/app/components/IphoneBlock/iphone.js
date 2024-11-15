@@ -1,8 +1,12 @@
 import Image from "next/image";
 import React from "react";
+import IphoneComponent from "./iphonecomponent";
 
 export default function IphoneBlock() {
   return (
-    <div className="h-[85vh] w-auto flex-col bg-red-400 flex items-center justify-end overflow-hidden relative"></div>
+    <div id="iphone-blocks" className="flex flex-col gap-[16px]">
+      <IphoneComponent></IphoneComponent>
+      <IphoneComponent></IphoneComponent>
+    </div>
   );
 }
