@@ -1,17 +1,9 @@
-import Image from "next/image";
 import React from "react";
-import { useEffect } from "react";
 
 export default function IphoneComponent(props) {
-  useEffect(() => {
-    console.log(props);
-  });
   return (
-    <div className="h-[85vh] w-full flex-col bg-red-400 flex items-center justify-end overflow-hidden relative">
-      <div
-        id="img-wrapper-iphone"
-        className=" h-full w-full top-0 left-0 relative "
-      >
+    <div className="h-[85vh] w-full flex-col flex items-center justify-end overflow-hidden relative">
+      <div id="img-wrapper" className=" h-full w-full top-0 left-0 relative ">
         <figure
           style={{
             backgroundImage: `url(${props.img})`,
@@ -20,8 +12,19 @@ export default function IphoneComponent(props) {
           }}
           className=" w-full h-full absolute bg-cover  "
           id="iphone"
-          // src={props.img}
         ></figure>
+      </div>
+
+      <div
+        id="text"
+        className="flex flex-col gap-[16px] absolute top-0 pt-[55px] items-center"
+      >
+        <h2>{props.title}</h2>
+        <p>Hello, Apple Intelligence.</p>
+        <div id="iphone-buttons" className="flex flex-row gap-[8px]">
+          <button>Learn more</button>
+          <button>Buy</button>
+        </div>
       </div>
     </div>
   );
