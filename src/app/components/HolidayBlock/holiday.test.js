@@ -14,3 +14,11 @@ it("holiday video should start automatically when page loads", async () => {
 
   expect(screen.getByRole("video")).toHaveAttribute("autoplay");
 });
+
+it("holiday video should not loop", async () => {
+  render(<Home></Home>);
+
+  await screen.getByRole("video");
+
+  expect(screen.getByRole("video")).not.toHaveAttribute("loop");
+});
