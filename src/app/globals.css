@@ -41,7 +41,11 @@ ul li {
     "Arial", sans-serif;
 }
 
-#iphone {
-  /* transform: translatex(-50%);
-  right: auto; */
+.squares-section {
+  display: flex;
+  gap: 12px;
+  background-color: #0f172a;
+  width: 100%;
+  height: 80vh;
+  margin-bottom: 12px;
 }
