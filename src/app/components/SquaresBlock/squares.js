@@ -12,7 +12,7 @@ export default function SquaresBlock() {
         textColor: "",
       },
       {
-        imgs: [],
+        imgs: ["/promo/airPods/airPods_bg.jpg"],
         textPosition: "",
         title: "",
         text: "",
@@ -21,14 +21,30 @@ export default function SquaresBlock() {
     ],
     [
       {
-        imgs: [],
+        imgs: ["/promo/watch/watch_bg.jpg"],
         textPosition: "",
         title: "",
         text: "",
         textColor: "",
       },
       {
-        imgs: [],
+        imgs: ["/promo/macBook/macBook_bg.jpg"],
+        textPosition: "",
+        title: "",
+        text: "",
+        textColor: "",
+      },
+    ],
+    [
+      {
+        imgs: ["/promo/tradeIn/tradeIn_bg.jpg"],
+        textPosition: "",
+        title: "",
+        text: "",
+        textColor: "",
+      },
+      {
+        imgs: ["/promo/appleCard/appleCard_bg.jpg"],
         textPosition: "",
         title: "",
         text: "",
