@@ -41,6 +41,7 @@ ul li {
     "Arial", sans-serif;
 }
 
-#holiday-picture {
-  background: url("/apple_holiday.jpg");
+#iphone {
+  /* transform: translatex(-50%);
+  right: auto; */
 }

@@ -9,7 +9,7 @@ import React from "react";
 
 export default function Home() {
   return (
-    <div className="  max-w-[100vw] ">
+    <div>
       <Header></Header>
       <HolidayBlock></HolidayBlock>
 
