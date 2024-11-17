@@ -3,6 +3,7 @@ import { FaApple } from "react-icons/fa";
 import { IoIosSearch } from "react-icons/io";
 import { IoBagOutline } from "react-icons/io5";
 import React from "react";
+import { motion } from "framer-motion";
 
 export default function Header() {
   return (
