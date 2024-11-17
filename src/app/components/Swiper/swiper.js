@@ -11,7 +11,49 @@ import "swiper/css/scrollbar";
 import { useSwiper } from "swiper/react";
 
 export default function SwiperComponent() {
-  const swiper = useSwiper();
+  const slides = [
+    {
+      img: "/slides/badSisters.jpg",
+      text: [],
+    },
+    {
+      img: "/slides/shrinking.jpg",
+      text: [],
+    },
+    {
+      img: "/slides/disclaimer.jpg",
+      text: [],
+    },
+    {
+      img: "/slides/seasonpass.jpg",
+      text: [],
+    },
+    {
+      img: "/slides/slowHorses.jpg",
+      text: [],
+    },
+    {
+      img: "/slides/tedLasso.jpg",
+      text: [],
+    },
+    {
+      img: "/slides/wolfs.jpg",
+      text: [],
+    },
+    {
+      img: "/slides/before.jpg",
+      text: [],
+    },
+    {
+      img: "/slides/badMonkey.jpg",
+      text: [],
+    },
+    {
+      img: "/slides/silo.jpg",
+      text: [],
+    },
+  ];
+
   return (
     <div>
       <Swiper
@@ -25,7 +67,16 @@ export default function SwiperComponent() {
         scrollbar={{ draggable: true }}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
+        loop={true}
       >
+        {slides.map((slide, index) => (
+          <SwiperSlide key={index}>
+            <div className="my-0 mx-auto h-[90vh] w-auto ">
+              <img src={slide.img} className="h-full w-full block "></img>
+            </div>
+          </SwiperSlide>
+        ))}
+        {/* 
         <SwiperSlide>
           <div className="my-0 mx-auto h-[90vh] w-auto ">
             <img
@@ -81,7 +132,7 @@ export default function SwiperComponent() {
               className="h-full w-full "
             ></img>
           </div>
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
     </div>
   );
