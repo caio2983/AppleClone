@@ -51,3 +51,7 @@ ul li {
   margin-top: 12px;
   padding-inline: 12px;
 }
+
+.swiper-slide {
+  width: fit-content;
+}

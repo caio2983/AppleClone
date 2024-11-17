@@ -16,7 +16,7 @@ export default function SquaresBlock() {
         textPosition: "bottom",
         title: "",
         text: "Hearing Test, Hearing Aid, and Hearing Protection features in a free software update",
-        textColor: "",
+        textColor: "light",
       },
     ],
     [
@@ -32,7 +32,7 @@ export default function SquaresBlock() {
         textPosition: "top",
         title: "",
         text: "A work of smart.",
-        textColor: "",
+        textColor: "light",
       },
     ],
     [
