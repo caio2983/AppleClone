@@ -1,11 +1,6 @@
 import React from "react";
-import { useEffect } from "react";
 
 export default function SquareComponent(props) {
-  useEffect(() => {
-    console.log(props);
-  });
-
   return (
     <div id="square-component" className=" w-1/2 h-full  relative">
       <div id="img-wrapper" className=" h-full w-full top-0 left-0 absolute ">
