@@ -8,31 +8,7 @@ import { AnimatePresence, motion, useCycle } from "framer-motion";
 import LojaHoverComponent from "./HoverComponents/Loja";
 
 export default function Header() {
-  const [isOpen, setOpen] = useState(false);
-
-  const sidebar = {
-    open: {
-      opacity: 1,
-
-      height: "70vh",
-
-      zIndex: 999,
-      transition: {
-        stiffness: 20,
-        restDelta: 4,
-      },
-    },
-    closed: {
-      opacity: 1,
-      translateY: "0",
-      height: 0,
-
-      transition: {
-        stiffness: 400,
-        damping: 40,
-      },
-    },
-  };
+  const [isHovered, setHovered] = useState(false);
   return (
     <nav className="  relative top-0 z-50">
       <div id="nav-content" className="px-[22px] mx-[256px] h-[44px] ">
@@ -40,13 +16,12 @@ export default function Header() {
           <li>
             <FaApple className="text-[rgba(0,0,0,0.8)] text-[20px]  align-middle leading-[50px]" />
           </li>
-          <li className="relative z-50">
-            <motion.div
-              onHoverStart={() => setOpen(true)}
-              onHoverEnd={() => setOpen(false)}
-            >
+          <li className="z-50">
+            <motion.div>
               <a href="#" className="px-[8px]">
-                <span>Loja</span>
+                <LojaHoverComponent>
+                  <span>Loja</span>
+                </LojaHoverComponent>
               </a>
             </motion.div>
           </li>
@@ -104,17 +79,6 @@ export default function Header() {
           </li>
         </ul>
       </div>
-
-      <AnimatePresence>
-        <motion.div
-          animate={isOpen ? "open" : "closed"}
-          variants={sidebar}
-          initial="closed"
-          className="submenu relative bg-slate-900 w-full"
-        >
-          Loja Hover
-        </motion.div>
-      </AnimatePresence>
     </nav>
   );
 }

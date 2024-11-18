@@ -67,4 +67,5 @@ ul li {
 .submenu {
   position: absolute;
   z-index: 999;
+  transform-origin: left top;
 }
