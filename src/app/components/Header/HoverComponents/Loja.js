@@ -5,12 +5,12 @@ import { useState, useRef, useEffect } from "react";
 import { AnimatePresence, motion, useCycle } from "framer-motion";
 
 export default function LojaHoverComponent() {
-  const [isHovered, setHovered] = useState(true);
+  const [isHovered, setHovered] = useState(false);
   const sidebar = {
     open: {
       opacity: 1,
 
-      height: "70vh",
+      height: "50vh",
 
       zIndex: 999,
       transition: {
@@ -32,7 +32,7 @@ export default function LojaHoverComponent() {
   return (
     <div
       onMouseEnter={() => setHovered(true)}
-      // onMouseLeave={() => setHovered(false)}
+      onMouseLeave={() => setHovered(false)}
       className=""
     >
       <span>Loja</span>
@@ -40,10 +40,10 @@ export default function LojaHoverComponent() {
         <motion.div
           animate={isHovered ? "open" : "closed"}
           variants={sidebar}
-          initial="open"
-          className="flyout-open w-full px-[128px] left-0 top-[44px]"
+          initial="closed"
+          className="flyout-open w-full overflow-hidden   left-0 top-[44px]"
         >
-          <div className="w-full h-full flex justify-center">
+          <div className="w-full h-full flex ml-[256px]">
             <div className="flex flex-col pr-[88px]">
               <h2 className="submenu-header">Comprar</h2>
               <ul className="nav-list">
@@ -68,26 +68,34 @@ export default function LojaHoverComponent() {
               </ul>
             </div>
 
-            <div className="flex flex-col bg-slate-500 ">
-              <p>Links rápidos</p>
-              <p>Comprar presentes de Natal</p>
-              <p>Encontre uma loja</p>
-              <p>Status do pedido</p>
-              <p>Financiamento</p>
+            <div className="flex flex-col pr-[44px]">
+              <h2 className="submenu-header">Links rápidos</h2>
+              <ul className="nav-list">
+                <li className="nav-list-item-smaller">
+                  <a className="nav-submenu-link">Comprar presentes de Natal</a>
+                </li>
+                <li className="nav-list-item-smaller">
+                  <a className="nav-submenu-link">Encontre uma loja</a>
+                </li>
+                <li className="nav-list-item-smaller">
+                  <a className="nav-submenu-link">Status do pedido</a>
+                </li>
+                <li className="nav-list-item-smaller">
+                  <a className="nav-submenu-link">Financiamento</a>
+                </li>
+              </ul>
             </div>
 
-            <div className="flex flex-col bg-slate-500">
-              <p>Links rápidos</p>
-              <p>Comprar presentes de Natal</p>
-              <p>Encontre uma loja</p>
-              <p>Status do pedido</p>
-              <p>Financiamento</p>
-            </div>
-
-            <div className="flex flex-col bg-orange-400 w-1/4">
-              <p>Comprar nas lojas especiais</p>
-              <p>Educação</p>
-              <p>Negócios</p>
+            <div className="flex flex-col pr-[44px]">
+              <h2 className="submenu-header">Comprar nas lojas especiais</h2>
+              <ul className="nav-list">
+                <li className="nav-list-item-smaller">
+                  <a className="nav-submenu-link">Educação</a>
+                </li>
+                <li className="nav-list-item-smaller">
+                  <a className="nav-submenu-link">Negócios</a>
+                </li>
+              </ul>
             </div>
           </div>
         </motion.div>

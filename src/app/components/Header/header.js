@@ -17,7 +17,6 @@ import AcessoriosHoverComponent from "./HoverComponents/Acessorios";
 import SuporteHoverComponent from "./HoverComponents/Suporte";
 
 export default function Header() {
-  const [isHovered, setHovered] = useState(false);
   return (
     <nav id="globalnav" className="  relative top-0 z-50">
       <div id="nav-content" className="px-[22px] mx-[256px] h-[44px] ">
@@ -28,7 +27,7 @@ export default function Header() {
           <li>
             <FaApple className="text-[rgba(0,0,0,0.8)] text-[20px]  align-middle leading-[50px]" />
           </li>
-          <li className="z-50">
+          <li>
             <motion.div>
               <LojaHoverComponent></LojaHoverComponent>
             </motion.div>

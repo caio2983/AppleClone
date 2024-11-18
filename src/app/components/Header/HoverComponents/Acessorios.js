@@ -10,7 +10,7 @@ export default function AcessoriosHoverComponent() {
     open: {
       opacity: 1,
 
-      height: "70vh",
+      height: "50vh",
 
       zIndex: 999,
       transition: {
