@@ -15,6 +15,7 @@ import TVeCasaHoverComponent from "./HoverComponents/TveCasa";
 import EntretenimentoHoverComponent from "./HoverComponents/Entretenimento";
 import AcessoriosHoverComponent from "./HoverComponents/Acessorios";
 import SuporteHoverComponent from "./HoverComponents/Suporte";
+import HoverComponent from "./Hover";
 
 export default function Header() {
   return (
@@ -86,6 +87,12 @@ export default function Header() {
           </li>
         </ul>
       </div>
+
+      <li>
+        <HoverComponent>
+          <div>aaa</div>
+        </HoverComponent>
+      </li>
     </nav>
   );
 }

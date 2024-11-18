@@ -1,10 +1,10 @@
 import Image from "next/image";
-import React from "react";
+import React, { Children } from "react";
 
 import { useState, useRef, useEffect } from "react";
 import { AnimatePresence, motion, useCycle } from "framer-motion";
 
-export default function AirpodsHoverComponent() {
+export default function HoverComponent({ children }) {
   const [isHovered, setHovered] = useState(false);
   const sidebar = {
     open: {
@@ -43,7 +43,7 @@ export default function AirpodsHoverComponent() {
           initial="closed"
           className="flyout-open"
         >
-          Airpods Hover
+          {children}
         </motion.div>
       </AnimatePresence>
     </div>

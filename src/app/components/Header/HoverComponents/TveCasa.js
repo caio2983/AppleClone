@@ -41,7 +41,7 @@ export default function TVeCasaHoverComponent() {
           animate={isHovered ? "open" : "closed"}
           variants={sidebar}
           initial="closed"
-          className="submenu  bg-slate-900 absolute  w-full left-0 top-[44px]"
+          className="flyout-open"
         >
           TV e Casa Hover
         </motion.div>

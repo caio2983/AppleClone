@@ -41,7 +41,7 @@ export default function IphoneHoverComponent() {
           animate={isHovered ? "open" : "closed"}
           variants={sidebar}
           initial="closed"
-          className="submenu  bg-slate-900 absolute  w-full left-0 top-[44px]"
+          className="flyout-open"
         >
           Iphone Hover
         </motion.div>

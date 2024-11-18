@@ -1,7 +1,5 @@
-import Image from "next/image";
 import React from "react";
-
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import { AnimatePresence, motion, useCycle } from "framer-motion";
 
 export default function WatchHoverComponent() {
@@ -33,7 +31,6 @@ export default function WatchHoverComponent() {
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className=""
     >
       <span>Watch</span>
       <AnimatePresence>
@@ -41,7 +38,7 @@ export default function WatchHoverComponent() {
           animate={isHovered ? "open" : "closed"}
           variants={sidebar}
           initial="closed"
-          className="submenu  bg-slate-900 absolute  w-full left-0 top-[44px]"
+          className="flyout-open"
         >
           Watch Hover
         </motion.div>

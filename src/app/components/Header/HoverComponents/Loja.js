@@ -41,7 +41,7 @@ export default function LojaHoverComponent() {
           animate={isHovered ? "open" : "closed"}
           variants={sidebar}
           initial="closed"
-          className="flyout-open w-full overflow-hidden   left-0 top-[44px]"
+          className="flyout-open"
         >
           <div className="w-full h-full flex ml-[256px]">
             <div className="flex flex-col pr-[88px]">
