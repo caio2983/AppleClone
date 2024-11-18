@@ -15,7 +15,7 @@ export default function LojaHoverComponent() {
       zIndex: 999,
       transition: {
         stiffness: 20,
-        restDelta: 4,
+        restDelta: 1.5,
       },
     },
     closed: {
@@ -40,10 +40,36 @@ export default function LojaHoverComponent() {
         <motion.div
           animate={isHovered ? "open" : "closed"}
           variants={sidebar}
-          initial="closed"
-          className="submenu  bg-slate-900 absolute  w-full left-0 top-[44px]"
+          initial="open"
+          className="flyout-open w-full left-0 top-[44px]"
         >
-          Loja Hover
+          <div className="w-full h-full bg-slate-600 flex justify-center">
+            <div className="flex flex-col bg-red-800 w-1/4">
+              <p>Comprar</p>
+              <p>Comprar os Lançamentos</p>
+              <p>Mac</p>
+              <p>Ipad</p>
+              <p>Iphone</p>
+              <p>Apple Watch</p>
+              <p>Acessórios</p>
+            </div>
+
+            <div className="flex flex-col bg-slate-500 w-1/4">
+              <p>Links rápidos</p>
+              <p>Comprar presentes de Natal</p>
+              <p>Encontre uma loja</p>
+              <p>Status do pedido</p>
+              <p>Financiamento</p>
+            </div>
+
+            <div className="flex flex-col bg-slate-500 w-1/4">
+              <p>Links rápidos</p>
+              <p>Comprar presentes de Natal</p>
+              <p>Encontre uma loja</p>
+              <p>Status do pedido</p>
+              <p>Financiamento</p>
+            </div>
+          </div>
         </motion.div>
       </AnimatePresence>
     </div>

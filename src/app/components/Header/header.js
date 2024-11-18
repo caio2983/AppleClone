@@ -27,92 +27,52 @@ export default function Header() {
           </li>
           <li className="z-50">
             <motion.div>
-              <a href="#" className="px-[8px]">
-                <LojaHoverComponent>
-                  <span>Loja</span>
-                </LojaHoverComponent>
-              </a>
+              <LojaHoverComponent></LojaHoverComponent>
             </motion.div>
           </li>
           <li>
             <motion.div>
-              <a href="#" className="px-[8px]">
-                <MacHoverComponent>
-                  <span>Mac</span>
-                </MacHoverComponent>
-              </a>
+              <MacHoverComponent></MacHoverComponent>
             </motion.div>
           </li>
           <li>
             <motion.div>
-              <a href="#" className="px-[8px]">
-                <IpadHoverComponent>
-                  <span>Ipad</span>
-                </IpadHoverComponent>
-              </a>
+              <IpadHoverComponent></IpadHoverComponent>
             </motion.div>
           </li>
           <li>
             <motion.div>
-              <a href="#" className="px-[8px]">
-                <IphoneHoverComponent>
-                  <span>Iphone</span>
-                </IphoneHoverComponent>
-              </a>
+              <IphoneHoverComponent></IphoneHoverComponent>
             </motion.div>
           </li>
           <li>
             <motion.div>
-              <a href="#" className="px-[8px]">
-                <WatchHoverComponent>
-                  <span>Watch</span>
-                </WatchHoverComponent>
-              </a>
+              <WatchHoverComponent></WatchHoverComponent>
             </motion.div>
           </li>
           <li>
             <motion.div>
-              <a href="#" className="px-[8px]">
-                <AirPodsHoverComponent>
-                  <span>AirPods</span>
-                </AirPodsHoverComponent>
-              </a>
+              <AirPodsHoverComponent></AirPodsHoverComponent>
             </motion.div>
           </li>
           <li>
             <motion.div>
-              <a href="#" className="px-[8px]">
-                <TVeCasaHoverComponent>
-                  <span>Tv e Casa</span>
-                </TVeCasaHoverComponent>
-              </a>
+              <TVeCasaHoverComponent></TVeCasaHoverComponent>
             </motion.div>
           </li>
           <li>
             <motion.div>
-              <a href="#" className="px-[8px]">
-                <EntretenimentoHoverComponent>
-                  <span>Entretenimento</span>
-                </EntretenimentoHoverComponent>
-              </a>
+              <EntretenimentoHoverComponent></EntretenimentoHoverComponent>
             </motion.div>
           </li>
           <li>
             <motion.div>
-              <a href="#" className="px-[8px]">
-                <AcessoriosHoverComponent>
-                  <span>Acessorios</span>
-                </AcessoriosHoverComponent>
-              </a>
+              <AcessoriosHoverComponent></AcessoriosHoverComponent>
             </motion.div>
           </li>
           <li>
             <motion.div>
-              <a href="#" className="px-[8px]">
-                <SuporteHoverComponent>
-                  <span>Suporte</span>
-                </SuporteHoverComponent>
-              </a>
+              <SuporteHoverComponent></SuporteHoverComponent>
             </motion.div>
           </li>
 
