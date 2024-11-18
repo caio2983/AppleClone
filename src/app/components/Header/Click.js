@@ -40,7 +40,7 @@ export default function ClickComponent({ children, onClick, element }) {
           animate={isActive ? "open" : "closed"}
           variants={sidebar}
           initial="closed"
-          className="flyout-open"
+          className="flyout-open cursor-default"
           onMouseLeave={() => setActive(false)}
         ></motion.div>
       </AnimatePresence>

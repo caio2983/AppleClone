@@ -91,12 +91,12 @@ export default function Header() {
           </li>
           <li>
             <ClickComponent onClick={handleClick}>
-              <IoIosSearch className="text-[rgba(0,0,0,0.8)] text-[20px] ]"></IoIosSearch>
+              <IoIosSearch className="text-[rgba(0,0,0,0.8)] text-[20px] ] "></IoIosSearch>
             </ClickComponent>
           </li>
           <li>
             <ClickComponent onClick={handleClick}>
-              <IoBagOutline className="text-[rgba(0,0,0,0.8)] text-[20px]"></IoBagOutline>
+              <IoBagOutline className="text-[rgba(0,0,0,0.8)] text-[20px] "></IoBagOutline>
             </ClickComponent>
           </li>
         </ul>
