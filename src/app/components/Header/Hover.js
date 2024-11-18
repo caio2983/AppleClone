@@ -1,8 +1,6 @@
-import Image from "next/image";
-import React, { Children } from "react";
-
-import { useState, useRef, useEffect } from "react";
-import { AnimatePresence, motion, useCycle } from "framer-motion";
+import React from "react";
+import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
 export default function HoverComponent({ children, label }) {
   const [isHovered, setHovered] = useState(false);
