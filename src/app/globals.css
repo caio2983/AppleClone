@@ -23,7 +23,7 @@ body {
   position: relative;
 }
 
-ul li {
+#globalnav-ul > li {
   width: auto;
   height: 100%;
   display: flex;
@@ -71,4 +71,41 @@ ul li {
   background-color: #fafafc;
 
   padding: 40px 22px 84px 22px;
+}
+
+.nav-list {
+  margin: 0;
+  list-style: none;
+}
+
+.submenu-header {
+  font-size: 12px;
+  line-height: 1.3333733333;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  color: rgb(110, 110, 115);
+  display: block;
+}
+
+.nav-list-item {
+  font-size: 24px;
+  line-height: 1.1666666667;
+  font-weight: 600;
+  letter-spacing: 0.009em;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  margin-inline-start: -11px;
+  margin-inline-end: -11px;
+}
+
+.nav-submenu-link {
+  display: inline-block;
+  padding: 7px 11px;
+  margin-bottom: -6px;
+  color: #333336;
+  text-decoration: none;
+  transition: color 0.32s cubic-bezier(0.4, 0, 0.6, 1);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }

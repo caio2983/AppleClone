@@ -5,7 +5,7 @@ import { useState, useRef, useEffect } from "react";
 import { AnimatePresence, motion, useCycle } from "framer-motion";
 
 export default function LojaHoverComponent() {
-  const [isHovered, setHovered] = useState(false);
+  const [isHovered, setHovered] = useState(true);
   const sidebar = {
     open: {
       opacity: 1,
@@ -32,7 +32,7 @@ export default function LojaHoverComponent() {
   return (
     <div
       onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
+      // onMouseLeave={() => setHovered(false)}
       className=""
     >
       <span>Loja</span>
@@ -41,20 +41,34 @@ export default function LojaHoverComponent() {
           animate={isHovered ? "open" : "closed"}
           variants={sidebar}
           initial="open"
-          className="flyout-open w-full left-0 top-[44px]"
+          className="flyout-open w-full px-[128px] left-0 top-[44px]"
         >
-          <div className="w-full h-full bg-slate-600 flex justify-center">
-            <div className="flex flex-col bg-red-800 w-1/4">
-              <p>Comprar</p>
-              <p>Comprar os Lançamentos</p>
-              <p>Mac</p>
-              <p>Ipad</p>
-              <p>Iphone</p>
-              <p>Apple Watch</p>
-              <p>Acessórios</p>
+          <div className="w-full h-full flex justify-center">
+            <div className="flex flex-col pr-[88px]">
+              <h2 className="submenu-header">Comprar</h2>
+              <ul className="nav-list">
+                <li className="nav-list-item">
+                  <a className="nav-submenu-link">Comprar os Lançamentos</a>
+                </li>
+                <li className="nav-list-item">
+                  <a className="nav-submenu-link">Mac</a>
+                </li>
+                <li className="nav-list-item">
+                  <a className="nav-submenu-link">Ipad</a>
+                </li>
+                <li className="nav-list-item">
+                  <a className="nav-submenu-link">Iphone</a>
+                </li>
+                <li className="nav-list-item">
+                  <a className="nav-submenu-link">Apple Watch</a>
+                </li>
+                <li className="nav-list-item">
+                  <a className="nav-submenu-link">Acessórios</a>
+                </li>
+              </ul>
             </div>
 
-            <div className="flex flex-col bg-slate-500 w-1/4">
+            <div className="flex flex-col bg-slate-500 ">
               <p>Links rápidos</p>
               <p>Comprar presentes de Natal</p>
               <p>Encontre uma loja</p>
@@ -62,12 +76,18 @@ export default function LojaHoverComponent() {
               <p>Financiamento</p>
             </div>
 
-            <div className="flex flex-col bg-slate-500 w-1/4">
+            <div className="flex flex-col bg-slate-500">
               <p>Links rápidos</p>
               <p>Comprar presentes de Natal</p>
               <p>Encontre uma loja</p>
               <p>Status do pedido</p>
               <p>Financiamento</p>
+            </div>
+
+            <div className="flex flex-col bg-orange-400 w-1/4">
+              <p>Comprar nas lojas especiais</p>
+              <p>Educação</p>
+              <p>Negócios</p>
             </div>
           </div>
         </motion.div>

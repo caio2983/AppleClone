@@ -19,9 +19,12 @@ import SuporteHoverComponent from "./HoverComponents/Suporte";
 export default function Header() {
   const [isHovered, setHovered] = useState(false);
   return (
-    <nav className="  relative top-0 z-50">
+    <nav id="globalnav" className="  relative top-0 z-50">
       <div id="nav-content" className="px-[22px] mx-[256px] h-[44px] ">
-        <ul className="flex flex-row text-black justify-between h-full items-center gap-2">
+        <ul
+          id="globalnav-ul"
+          className="flex flex-row text-black justify-between h-full items-center gap-2"
+        >
           <li>
             <FaApple className="text-[rgba(0,0,0,0.8)] text-[20px]  align-middle leading-[50px]" />
           </li>
