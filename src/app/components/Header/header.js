@@ -15,7 +15,7 @@ export default function Header() {
       opacity: 1,
 
       height: "70vh",
-      position: "relative",
+
       zIndex: 999,
       transition: {
         stiffness: 20,
@@ -26,9 +26,7 @@ export default function Header() {
       opacity: 1,
       translateY: "0",
       height: 0,
-      visibility: "hidden",
-      position: "relative",
-      backgroundColor: "#1300ff",
+
       transition: {
         stiffness: 400,
         damping: 40,
@@ -44,8 +42,8 @@ export default function Header() {
           </li>
           <li className="relative z-50">
             <motion.div
-              onHoverStart={() => setOpen(!isOpen)}
-              onHoverEnd={() => setOpen(!isOpen)}
+              onHoverStart={() => setOpen(true)}
+              onHoverEnd={() => setOpen(false)}
             >
               <a href="#" className="px-[8px]">
                 <span>Loja</span>
@@ -112,9 +110,9 @@ export default function Header() {
           animate={isOpen ? "open" : "closed"}
           variants={sidebar}
           initial="closed"
-          className="submenu"
+          className="submenu relative bg-slate-900 w-full"
         >
-          <LojaHoverComponent></LojaHoverComponent>
+          Loja Hover
         </motion.div>
       </AnimatePresence>
     </nav>
