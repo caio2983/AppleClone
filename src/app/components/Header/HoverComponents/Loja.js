@@ -33,7 +33,7 @@ export default function LojaHoverComponent() {
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="bg-slate-500"
+      className=""
     >
       <span>Loja</span>
       <AnimatePresence>

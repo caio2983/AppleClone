@@ -4,7 +4,7 @@ import React from "react";
 import { useState, useRef, useEffect } from "react";
 import { AnimatePresence, motion, useCycle } from "framer-motion";
 
-export default function MacHoverComponent() {
+export default function WatchHoverComponent() {
   const [isHovered, setHovered] = useState(false);
   const sidebar = {
     open: {
@@ -35,7 +35,7 @@ export default function MacHoverComponent() {
       onMouseLeave={() => setHovered(false)}
       className=""
     >
-      <span>Mac</span>
+      <span>Watch</span>
       <AnimatePresence>
         <motion.div
           animate={isHovered ? "open" : "closed"}
@@ -43,7 +43,7 @@ export default function MacHoverComponent() {
           initial="closed"
           className="submenu  bg-slate-900 absolute  w-full left-0 top-[44px]"
         >
-          Mac Hover
+          Watch Hover
         </motion.div>
       </AnimatePresence>
     </div>

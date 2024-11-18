@@ -6,6 +6,15 @@ import React from "react";
 import { useState, useRef, useEffect } from "react";
 import { AnimatePresence, motion, useCycle } from "framer-motion";
 import LojaHoverComponent from "./HoverComponents/Loja";
+import MacHoverComponent from "./HoverComponents/Mac";
+import IpadHoverComponent from "./HoverComponents/Ipad";
+import IphoneHoverComponent from "./HoverComponents/Iphone";
+import WatchHoverComponent from "./HoverComponents/Watch";
+import AirPodsHoverComponent from "./HoverComponents/Airpods";
+import TVeCasaHoverComponent from "./HoverComponents/TveCasa";
+import EntretenimentoHoverComponent from "./HoverComponents/Entretenimento";
+import AcessoriosHoverComponent from "./HoverComponents/Acessorios";
+import SuporteHoverComponent from "./HoverComponents/Suporte";
 
 export default function Header() {
   const [isHovered, setHovered] = useState(false);
@@ -26,49 +35,85 @@ export default function Header() {
             </motion.div>
           </li>
           <li>
-            <a href="#" className="px-[8px]">
-              <span>Mac</span>
-            </a>
+            <motion.div>
+              <a href="#" className="px-[8px]">
+                <MacHoverComponent>
+                  <span>Mac</span>
+                </MacHoverComponent>
+              </a>
+            </motion.div>
           </li>
           <li>
-            <a href="#" className="px-[8px]">
-              <span>Ipad</span>
-            </a>
+            <motion.div>
+              <a href="#" className="px-[8px]">
+                <IpadHoverComponent>
+                  <span>Ipad</span>
+                </IpadHoverComponent>
+              </a>
+            </motion.div>
           </li>
           <li>
-            <a href="#" className="px-[8px]">
-              <span>Iphone</span>
-            </a>
+            <motion.div>
+              <a href="#" className="px-[8px]">
+                <IphoneHoverComponent>
+                  <span>Iphone</span>
+                </IphoneHoverComponent>
+              </a>
+            </motion.div>
           </li>
           <li>
-            <a href="#" className="px-[8px]">
-              <span>Watch</span>
-            </a>
+            <motion.div>
+              <a href="#" className="px-[8px]">
+                <WatchHoverComponent>
+                  <span>Watch</span>
+                </WatchHoverComponent>
+              </a>
+            </motion.div>
           </li>
           <li>
-            <a href="#" className="px-[8px]">
-              <span>AirPods</span>
-            </a>
+            <motion.div>
+              <a href="#" className="px-[8px]">
+                <AirPodsHoverComponent>
+                  <span>AirPods</span>
+                </AirPodsHoverComponent>
+              </a>
+            </motion.div>
           </li>
           <li>
-            <a href="#" className="px-[8px]">
-              <span>TV e Casa</span>
-            </a>
+            <motion.div>
+              <a href="#" className="px-[8px]">
+                <TVeCasaHoverComponent>
+                  <span>Tv e Casa</span>
+                </TVeCasaHoverComponent>
+              </a>
+            </motion.div>
           </li>
           <li>
-            <a href="#" className="px-[8px]">
-              <span>Entretenimento</span>
-            </a>
+            <motion.div>
+              <a href="#" className="px-[8px]">
+                <EntretenimentoHoverComponent>
+                  <span>Entretenimento</span>
+                </EntretenimentoHoverComponent>
+              </a>
+            </motion.div>
           </li>
           <li>
-            <a href="#" className="px-[8px]">
-              <span>Acessórios</span>
-            </a>
+            <motion.div>
+              <a href="#" className="px-[8px]">
+                <AcessoriosHoverComponent>
+                  <span>Acessorios</span>
+                </AcessoriosHoverComponent>
+              </a>
+            </motion.div>
           </li>
           <li>
-            <a href="#" className="px-[8px]">
-              <span>Suporte</span>
-            </a>
+            <motion.div>
+              <a href="#" className="px-[8px]">
+                <SuporteHoverComponent>
+                  <span>Suporte</span>
+                </SuporteHoverComponent>
+              </a>
+            </motion.div>
           </li>
 
           <li>
