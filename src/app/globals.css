@@ -62,8 +62,8 @@ body {
 }
 
 .flyout-open {
-  position: absolute;
-  z-index: 999;
+  position: fixed;
+  z-index: 1500000000;
   transform-origin: left top;
   background-color: #fafafc;
   width: 100%;
@@ -124,24 +124,38 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.globalnav-curtain {
+.globalnav-curtain-hidden {
   background: rgba(232, 232, 237, 0.4);
   backdrop-filter: blur(20px);
-  opacity: 1;
-  visibility: visible;
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   width: 100%;
+  margin-top: 44px;
   height: 100%;
   z-index: 9998;
-  transition: opacity 0.32s cubic-bezier(0.4, 0, 0.6, 1) 80ms,
-    visibility 0.32s step-end 80ms;
+  transition: opacity 0.32s cubic-bezier(0.4, 0, 0.6, 1),
+    visibility 0s linear 0.32s;
 }
 
-.globalnav-curtain-hidden {
-  opacity: 0;
-  visibility: hidden;
+.globalnav-curtain {
+  background: rgba(232, 232, 237, 0.4);
+  backdrop-filter: blur(20px);
+  opacity: 1;
+  visibility: visible;
+  position: fixed;
+  margin-top: 44px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 500;
+  transition: opacity 0.32s cubic-bezier(0.4, 0, 0.6, 1),
+    visibility 0s linear 0s;
 }

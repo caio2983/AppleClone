@@ -2,7 +2,7 @@ import { FaApple } from "react-icons/fa";
 import { IoIosSearch } from "react-icons/io";
 import { IoBagOutline } from "react-icons/io5";
 import React from "react";
-
+import { useRef, useState } from "react";
 import LojaHoverComponent from "./HoverComponents/Loja";
 import MacHoverComponent from "./HoverComponents/Mac";
 import IpadHoverComponent from "./HoverComponents/Ipad";
@@ -16,63 +16,69 @@ import SuporteHoverComponent from "./HoverComponents/Suporte";
 import HoverComponent from "./Hover";
 
 export default function Header() {
+  const [hoverState, setHoverState] = useState(false);
+
+  const handleHover = (isHovered) => {
+    setHoverState(isHovered);
+    console.log("hover teste");
+  };
   return (
-    <nav id="globalnav" className="relative top-0 z-[10000]">
+    <nav id="globalnav" className="top-0 ">
       <div id="nav-content" className="px-[22px] mx-[256px] h-[44px]">
         <ul
           id="globalnav-ul"
-          className="flex flex-row text-black justify-between h-full items-center gap-2"
+          className="flex flex-row text-black  justify-between h-full items-center gap-2 "
         >
           <li>
             <FaApple className="text-[rgba(0,0,0,0.8)] text-[20px] align-middle leading-[50px]" />
           </li>
           <li>
-            <HoverComponent label="Loja" className="z-[10000] relative">
+            <HoverComponent label="Loja" onHover={handleHover}>
               <LojaHoverComponent></LojaHoverComponent>
             </HoverComponent>
           </li>
           <li>
-            <HoverComponent label="Mac">
+            <HoverComponent label="Mac" onHover={handleHover}>
               <MacHoverComponent></MacHoverComponent>
             </HoverComponent>
           </li>
           <li>
-            <HoverComponent label="iPad">
+            <HoverComponent label="iPad" onHover={handleHover}>
               <IpadHoverComponent></IpadHoverComponent>
             </HoverComponent>
           </li>
           <li>
-            <HoverComponent label="iPhone">
+            <HoverComponent label="iPhone" onHover={handleHover}>
               <IphoneHoverComponent></IphoneHoverComponent>
             </HoverComponent>
           </li>
           <li>
-            <HoverComponent label="Watch">
+            <HoverComponent label="Watch" onHover={handleHover}>
               <WatchHoverComponent></WatchHoverComponent>
             </HoverComponent>
           </li>
           <li>
-            <HoverComponent label="AirPods">
+            <HoverComponent label="AirPods" onHover={handleHover}>
               <AirPodsHoverComponent></AirPodsHoverComponent>
             </HoverComponent>
           </li>
           <li>
-            <HoverComponent label="TV e Casa">
+            <HoverComponent label="TV e Casa" onHover={handleHover}>
               <TVeCasaHoverComponent></TVeCasaHoverComponent>
             </HoverComponent>
           </li>
           <li>
-            <HoverComponent label="Entretenimento">
+            <HoverComponent label="Entretenimento" onHover={handleHover}>
               <EntretenimentoHoverComponent></EntretenimentoHoverComponent>
             </HoverComponent>
           </li>
           <li>
-            <HoverComponent label="Acessórios">
+            <HoverComponent label="Acessórios" onHover={handleHover}>
               <AcessoriosHoverComponent></AcessoriosHoverComponent>
             </HoverComponent>
           </li>
           <li>
-            <HoverComponent label="Suporte">
+            <HoverComponent label="Suporte" onHover={handleHover}>
               <SuporteHoverComponent></SuporteHoverComponent>
             </HoverComponent>
           </li>
@@ -84,7 +90,11 @@ export default function Header() {
           </li>
         </ul>
       </div>
-      <div className="globalnav-curtain-hidden"></div>
+      <div
+        className={
+          hoverState ? "globalnav-curtain" : "globalnav-curtain-hidden"
+        }
+      ></div>
     </nav>
   );
 }

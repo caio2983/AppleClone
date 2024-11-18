@@ -1,15 +1,14 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
-export default function HoverComponent({ children, label }) {
+export default function HoverComponent({ children, label, onHover }) {
   const [isHovered, setHovered] = useState(false);
   const sidebar = {
     open: {
       opacity: 1,
-
+      width: "100vw",
       height: "50vh",
-
       zIndex: 999,
       transition: {
         stiffness: 20,
@@ -27,6 +26,11 @@ export default function HoverComponent({ children, label }) {
       },
     },
   };
+
+  useEffect(() => {
+    onHover(isHovered);
+  }, [isHovered]);
+
   return (
     <div
       onMouseEnter={() => setHovered(true)}
