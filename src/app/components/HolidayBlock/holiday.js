@@ -6,7 +6,7 @@ export default function HolidayBlock() {
   return (
     <div
       id="hero"
-      className="h-[80vh] w-auto flex-col pt-[55px] flex items-center justify-end overflow-hidden relative"
+      className="h-[80vh] w-auto flex-col pt-[55px] flex items-center justify-end overflow-hidden relative z-10"
     >
       <div id="img-wrapper" className=" w-full  top-0 left-0 absolute">
         <video

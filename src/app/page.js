@@ -22,7 +22,7 @@ import { useSwiper } from "swiper/react";
 
 export default function Home() {
   return (
-    <div>
+    <div className="relative z-0">
       <Header></Header>
       <HolidayBlock></HolidayBlock>
 
