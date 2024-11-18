@@ -66,11 +66,14 @@ body {
   z-index: 999;
   transform-origin: left top;
   background-color: #fafafc;
-  padding: 40px 22px 84px 22px;
   width: 100%;
   overflow: hidden;
   left: 0;
   top: 44px;
+}
+
+.flyout-content {
+  padding: 40px 22px 84px 22px;
 }
 
 .nav-list {

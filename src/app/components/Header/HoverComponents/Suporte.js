@@ -33,7 +33,6 @@ export default function SuporteHoverComponent() {
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className=""
     >
       <span>Suporte</span>
       <AnimatePresence>

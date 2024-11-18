@@ -30,7 +30,9 @@ export default function Header() {
           </li>
           <li>
             <motion.div>
-              <LojaHoverComponent></LojaHoverComponent>
+              <HoverComponent>
+                <LojaHoverComponent></LojaHoverComponent>
+              </HoverComponent>
             </motion.div>
           </li>
           <li>
@@ -87,12 +89,6 @@ export default function Header() {
           </li>
         </ul>
       </div>
-
-      <li>
-        <HoverComponent>
-          <div>aaa</div>
-        </HoverComponent>
-      </li>
     </nav>
   );
 }

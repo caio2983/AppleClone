@@ -33,9 +33,8 @@ export default function HoverComponent({ children }) {
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className=""
     >
-      <span>Airpods</span>
+      <span>Loja</span>
       <AnimatePresence>
         <motion.div
           animate={isHovered ? "open" : "closed"}
