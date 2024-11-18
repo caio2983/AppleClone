@@ -1,10 +1,8 @@
-import Image from "next/image";
 import { FaApple } from "react-icons/fa";
 import { IoIosSearch } from "react-icons/io";
 import { IoBagOutline } from "react-icons/io5";
 import React from "react";
-import { useState, useRef, useEffect } from "react";
-import { AnimatePresence, motion, useCycle } from "framer-motion";
+
 import LojaHoverComponent from "./HoverComponents/Loja";
 import MacHoverComponent from "./HoverComponents/Mac";
 import IpadHoverComponent from "./HoverComponents/Ipad";
