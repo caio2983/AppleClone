@@ -159,3 +159,28 @@ body {
   transition: opacity 0.32s cubic-bezier(0.4, 0, 0.6, 1),
     visibility 0s linear 0s;
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: white !important;
+}
+
+.swiper-slide {
+  opacity: 0.5 !important;
+  transition: opacity 0.32s cubic-bezier(0.4, 0, 0.6, 1) !important;
+  transition: filter 0.32s cubic-bezier(0.4, 0, 0.6, 1);
+  cursor: pointer !important;
+  filter: brightness(0.5) !important;
+}
+
+.swiper-slide-active {
+  transition: opacity 0.32s cubic-bezier(0.4, 0, 0.6, 1) !important;
+  transition: filter 0.32s cubic-bezier(0.4, 0, 0.6, 1);
+  cursor: default !important;
+  filter: brightness(1) !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: white !important;
+}
