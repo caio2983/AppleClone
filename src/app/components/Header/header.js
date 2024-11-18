@@ -17,7 +17,7 @@ import HoverComponent from "./Hover";
 
 export default function Header() {
   return (
-    <nav id="globalnav" className="relative top-0 z-50">
+    <nav id="globalnav" className="relative top-0 z-[10000]">
       <div id="nav-content" className="px-[22px] mx-[256px] h-[44px]">
         <ul
           id="globalnav-ul"
@@ -27,7 +27,7 @@ export default function Header() {
             <FaApple className="text-[rgba(0,0,0,0.8)] text-[20px] align-middle leading-[50px]" />
           </li>
           <li>
-            <HoverComponent label="Loja">
+            <HoverComponent label="Loja" className="z-[10000] relative">
               <LojaHoverComponent></LojaHoverComponent>
             </HoverComponent>
           </li>
@@ -84,6 +84,7 @@ export default function Header() {
           </li>
         </ul>
       </div>
+      <div className="globalnav-curtain-hidden"></div>
     </nav>
   );
 }
