@@ -4,55 +4,58 @@ export default function TVeCasaHoverComponent() {
   return (
     <div className="w-full h-full flex ml-[256px] flyout-content">
       <div className="flex flex-col pr-[88px]">
-        <h2 className="submenu-header">Comprar</h2>
+        <h2 className="submenu-header">Explorar TV e Casa</h2>
         <ul className="nav-list">
           <li className="nav-list-item">
-            <a className="nav-submenu-link">Comprar os Lançamentos</a>
+            <a className="nav-submenu-link">Explorar TV e Casa</a>
           </li>
           <li className="nav-list-item">
-            <a className="nav-submenu-link">Mac</a>
-          </li>
-          <li className="nav-list-item">
-            <a className="nav-submenu-link">Ipad</a>
-          </li>
-          <li className="nav-list-item">
-            <a className="nav-submenu-link">Iphone</a>
-          </li>
-          <li className="nav-list-item">
-            <a className="nav-submenu-link">Apple Watch</a>
-          </li>
-          <li className="nav-list-item">
-            <a className="nav-submenu-link">Acessórios</a>
+            <a className="nav-submenu-link">Apple TV 4K</a>
           </li>
         </ul>
       </div>
 
       <div className="flex flex-col pr-[44px]">
-        <h2 className="submenu-header">Links rápidos</h2>
+        <h2 className="submenu-header">Comprar TV e Casa</h2>
         <ul className="nav-list">
           <li className="nav-list-item-smaller">
-            <a className="nav-submenu-link">Comprar presentes de Natal</a>
+            <a className="nav-submenu-link">Comprar Apple TV 4K</a>
           </li>
           <li className="nav-list-item-smaller">
-            <a className="nav-submenu-link">Encontre uma loja</a>
+            <a className="nav-submenu-link">Comprar Siri Remote</a>
           </li>
           <li className="nav-list-item-smaller">
-            <a className="nav-submenu-link">Status do pedido</a>
-          </li>
-          <li className="nav-list-item-smaller">
-            <a className="nav-submenu-link">Financiamento</a>
+            <a className="nav-submenu-link">Acessórios para TV e Casa</a>
           </li>
         </ul>
       </div>
 
       <div className="flex flex-col pr-[44px]">
-        <h2 className="submenu-header">Comprar nas lojas especiais</h2>
+        <h2 className="submenu-header">Mais para TV e Casa</h2>
         <ul className="nav-list">
           <li className="nav-list-item-smaller">
-            <a className="nav-submenu-link">Educação</a>
+            <a className="nav-submenu-link">Suporte para Apple TV</a>
           </li>
           <li className="nav-list-item-smaller">
-            <a className="nav-submenu-link">Negócios</a>
+            <a className="nav-submenu-link">Produtos AppleCare</a>
+          </li>
+          <li className="nav-list-item-smaller">
+            <a className="nav-submenu-link">App Apple TV</a>
+          </li>
+          <li className="nav-list-item-smaller">
+            <a className="nav-submenu-link">Apple TV+</a>
+          </li>
+          <li className="nav-list-item-smaller">
+            <a className="nav-submenu-link">App Casa</a>
+          </li>
+          <li className="nav-list-item-smaller">
+            <a className="nav-submenu-link">Apple Music</a>
+          </li>
+          <li className="nav-list-item-smaller">
+            <a className="nav-submenu-link">Siri</a>
+          </li>
+          <li className="nav-list-item-smaller">
+            <a className="nav-submenu-link">AirPlay</a>
           </li>
         </ul>
       </div>
