@@ -19,68 +19,65 @@ import HoverComponent from "./Hover";
 
 export default function Header() {
   return (
-    <nav id="globalnav" className="  relative top-0 z-50">
-      <div id="nav-content" className="px-[22px] mx-[256px] h-[44px] ">
+    <nav id="globalnav" className="relative top-0 z-50">
+      <div id="nav-content" className="px-[22px] mx-[256px] h-[44px]">
         <ul
           id="globalnav-ul"
           className="flex flex-row text-black justify-between h-full items-center gap-2"
         >
           <li>
-            <FaApple className="text-[rgba(0,0,0,0.8)] text-[20px]  align-middle leading-[50px]" />
+            <FaApple className="text-[rgba(0,0,0,0.8)] text-[20px] align-middle leading-[50px]" />
           </li>
           <li>
-            <motion.div>
-              <HoverComponent>
-                <LojaHoverComponent></LojaHoverComponent>
-              </HoverComponent>
-            </motion.div>
+            <HoverComponent label="Loja">
+              <LojaHoverComponent></LojaHoverComponent>
+            </HoverComponent>
           </li>
           <li>
-            <motion.div>
+            <HoverComponent label="Mac">
               <MacHoverComponent></MacHoverComponent>
-            </motion.div>
+            </HoverComponent>
           </li>
           <li>
-            <motion.div>
+            <HoverComponent label="iPad">
               <IpadHoverComponent></IpadHoverComponent>
-            </motion.div>
+            </HoverComponent>
           </li>
           <li>
-            <motion.div>
+            <HoverComponent label="iPhone">
               <IphoneHoverComponent></IphoneHoverComponent>
-            </motion.div>
+            </HoverComponent>
           </li>
           <li>
-            <motion.div>
+            <HoverComponent label="Watch">
               <WatchHoverComponent></WatchHoverComponent>
-            </motion.div>
+            </HoverComponent>
           </li>
           <li>
-            <motion.div>
+            <HoverComponent label="AirPods">
               <AirPodsHoverComponent></AirPodsHoverComponent>
-            </motion.div>
+            </HoverComponent>
           </li>
           <li>
-            <motion.div>
+            <HoverComponent label="TV e Casa">
               <TVeCasaHoverComponent></TVeCasaHoverComponent>
-            </motion.div>
+            </HoverComponent>
           </li>
           <li>
-            <motion.div>
+            <HoverComponent label="Entretenimento">
               <EntretenimentoHoverComponent></EntretenimentoHoverComponent>
-            </motion.div>
+            </HoverComponent>
           </li>
           <li>
-            <motion.div>
+            <HoverComponent label="Acessórios">
               <AcessoriosHoverComponent></AcessoriosHoverComponent>
-            </motion.div>
+            </HoverComponent>
           </li>
           <li>
-            <motion.div>
+            <HoverComponent label="Suporte">
               <SuporteHoverComponent></SuporteHoverComponent>
-            </motion.div>
+            </HoverComponent>
           </li>
-
           <li>
             <IoIosSearch className="text-[rgba(0,0,0,0.8)] text-[20px]"></IoIosSearch>
           </li>

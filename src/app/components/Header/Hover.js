@@ -4,7 +4,7 @@ import React, { Children } from "react";
 import { useState, useRef, useEffect } from "react";
 import { AnimatePresence, motion, useCycle } from "framer-motion";
 
-export default function HoverComponent({ children }) {
+export default function HoverComponent({ children, label }) {
   const [isHovered, setHovered] = useState(false);
   const sidebar = {
     open: {
@@ -34,7 +34,7 @@ export default function HoverComponent({ children }) {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <span>Loja</span>
+      <span>{label}</span>
       <AnimatePresence>
         <motion.div
           animate={isHovered ? "open" : "closed"}
