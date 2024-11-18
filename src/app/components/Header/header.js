@@ -14,13 +14,20 @@ import EntretenimentoHoverComponent from "./HoverComponents/Entretenimento";
 import AcessoriosHoverComponent from "./HoverComponents/Acessorios";
 import SuporteHoverComponent from "./HoverComponents/Suporte";
 import HoverComponent from "./Hover";
+import ClickComponent from "./Click";
 
 export default function Header() {
   const [hoverState, setHoverState] = useState(false);
+  const [clickState, setClickState] = useState(false);
 
   const handleHover = (isHovered) => {
     setHoverState(isHovered);
     console.log("hover teste");
+  };
+
+  const handleClick = (isActive) => {
+    setClickState(isActive);
+    console.log("Click Teste");
   };
   return (
     <nav id="globalnav" className="top-0 ">
@@ -83,16 +90,22 @@ export default function Header() {
             </HoverComponent>
           </li>
           <li>
-            <IoIosSearch className="text-[rgba(0,0,0,0.8)] text-[20px]"></IoIosSearch>
+            <ClickComponent onClick={handleClick}>
+              <IoIosSearch className="text-[rgba(0,0,0,0.8)] text-[20px] ]"></IoIosSearch>
+            </ClickComponent>
           </li>
           <li>
-            <IoBagOutline className="text-[rgba(0,0,0,0.8)] text-[20px]"></IoBagOutline>
+            <ClickComponent onClick={handleClick}>
+              <IoBagOutline className="text-[rgba(0,0,0,0.8)] text-[20px]"></IoBagOutline>
+            </ClickComponent>
           </li>
         </ul>
       </div>
       <div
         className={
-          hoverState ? "globalnav-curtain" : "globalnav-curtain-hidden"
+          hoverState || clickState
+            ? "globalnav-curtain"
+            : "globalnav-curtain-hidden"
         }
       ></div>
     </nav>

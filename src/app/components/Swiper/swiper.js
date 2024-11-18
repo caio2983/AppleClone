@@ -3,7 +3,6 @@ import {
   Navigation,
   Pagination,
   Scrollbar,
-  A11y,
   EffectCoverflow,
 } from "swiper/modules";
 
