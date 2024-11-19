@@ -30,7 +30,7 @@ export default function Header() {
     console.log("Click Teste");
   };
   return (
-    <nav id="globalnav" className="top-0 ">
+    <nav id="globalnav" className="fixed top-0 w-full z-[1000]">
       <div id="nav-content" className="px-[22px] mx-[256px] h-[44px]">
         <ul
           id="globalnav-ul"
