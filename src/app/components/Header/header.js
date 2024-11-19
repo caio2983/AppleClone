@@ -2,7 +2,7 @@ import { FaApple } from "react-icons/fa";
 import { IoIosSearch } from "react-icons/io";
 import { IoBagOutline } from "react-icons/io5";
 import React from "react";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import LojaHoverComponent from "./HoverComponents/Loja";
 import MacHoverComponent from "./HoverComponents/Mac";
 import IpadHoverComponent from "./HoverComponents/Ipad";
@@ -29,6 +29,29 @@ export default function Header() {
     setClickState(isActive);
     console.log("Click Teste");
   };
+
+  useEffect(() => {
+    if (hoverState) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [hoverState]);
+
+  useEffect(() => {
+    if (clickState) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [clickState]);
+
   return (
     <nav id="globalnav" className="top-0 ">
       <div id="nav-content" className="px-[22px] mx-[256px] h-[44px]">
