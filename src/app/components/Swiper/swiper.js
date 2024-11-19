@@ -69,6 +69,7 @@ export default function SwiperComponent() {
         scrollbar={{ draggable: true }}
         onSwiper={(swiper) => console.log(swiper)}
         loop={true}
+        speed={1000}
         slideToClickedSlide={true}
       >
         {slides.map((slide, index) => (
