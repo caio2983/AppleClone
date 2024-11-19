@@ -33,8 +33,8 @@ export default function HoverComponent({ children, label, onHover }) {
 
   return (
     <div
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
+      onMouseOver={() => setHovered(true)}
+      onMouseOut={() => setHovered(false)}
     >
       <span>{label}</span>
       <AnimatePresence>
