@@ -186,3 +186,124 @@ body {
 .swiper-pagination-bullet-active {
   background-color: white !important;
 }
+
+.button {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 17px;
+  line-height: 1.17648;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  border-style: solid;
+  border-width: 1px;
+  min-width: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 980px;
+  background: #0071e3;
+  color: #fff;
+  border-color: rgba(0, 0, 0, 0);
+  --sk-button-margin-horizontal: 14px;
+  --sk-button-margin-vertical: 14px;
+}
+
+.button:hover,
+.button:focus {
+  background: #0077ed;
+  color: #fff;
+  border-color: transparent;
+}
+
+.button:active {
+  background: #006edb;
+  color: #fff;
+  border-color: transparent;
+}
+
+.button-elevated {
+  font-size: 17px;
+  line-height: 1.17648;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  border-style: solid;
+  border-width: 1px;
+  min-width: 28px;
+  padding-left: 21px;
+  padding-right: 21px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  --sk-button-margin-horizontal: 18px;
+  --sk-button-margin-vertical: 18px;
+}
+
+.button-primary-light {
+  background: #f5f5f7 !important;
+  color: #000 !important;
+}
+
+.button-primary-light:hover {
+  background: #fff !important;
+}
+
+.button-tertiary-light {
+  border-color: #f5f5f7 !important;
+  background: transparent !important;
+  color: #f5f5f7 !important;
+}
+
+.button-tertiary-light:hover {
+  background: #fff !important;
+  color: #000 !important;
+}
+
+.theme-dark .button-tertiary {
+  background: rgba(0, 0, 0, 0);
+  color: #2997ff;
+  border-color: #2997ff;
+}
+
+.theme-dark .button-tertiary:hover {
+  background: #0077ed;
+  color: #fff;
+  border-color: transparent;
+}
+
+.theme-dark .button-neutral {
+  background: #f5f5f7;
+  color: #000;
+  border-color: rgba(0, 0, 0, 0);
+}
+
+.theme-dark .button-neutral:active {
+  background: #ededf2;
+  color: #000;
+  border-color: transparent;
+}
+
+.theme-dark .button-neutral:hover,
+.theme-dark .button-neutral:focus {
+  background: #fff;
+  color: #000;
+  border-color: transparent;
+}
+
+.theme-dark .button-tertiary-neutral {
+  background: rgba(0, 0, 0, 0);
+  color: #f5f5f7;
+  border-color: #f5f5f7;
+}
+
+.theme-dark .button-tertiary-neutral:hover,
+.theme-dark .button-tertiary-neutral:focus {
+  background: #fff;
+  color: #000;
+  border-color: transparent;
+}

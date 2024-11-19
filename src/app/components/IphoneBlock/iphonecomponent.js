@@ -22,8 +22,25 @@ export default function IphoneComponent(props) {
         <h2>{props.title}</h2>
         <p>Hello, Apple Intelligence.</p>
         <div id="iphone-buttons" className="flex flex-row gap-[8px]">
-          <button>Learn more</button>
-          <button>Buy</button>
+          <div className={props.theme === "dark" ? "theme-dark" : ""}>
+            <button
+              className={`button button-elevated ${
+                props.button1 === "tertiary" && "button-tertiary"
+              }`}
+            >
+              Learn more
+            </button>
+          </div>
+          <div className={props.theme === "dark" ? "theme-dark" : ""}>
+            <button
+              className={`button button-elevated ${
+                props.button2 === "tertiary-neutral" &&
+                "button-tertiary-neutral"
+              } ${props.button2 === "tertiary" && "button-tertiary"}`}
+            >
+              Buy
+            </button>
+          </div>
         </div>
       </div>
     </div>

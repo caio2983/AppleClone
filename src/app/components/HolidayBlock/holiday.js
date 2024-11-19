@@ -22,12 +22,13 @@ export default function HolidayBlock() {
         id="content-wrapper"
         className="flex flex-col items-center text-black justify-self-end z-10 absolute bottom-[80px] gap-[32px] "
       >
-        <span className="flex flex-col items-center gap-[8px]">
+        <div className="flex flex-col items-center gap-[8px] mt-[20px]">
           <h2 className="headline">Gift magic.</h2>
           <p>Make their holiday wish come true.</p>
-        </span>
-
-        <button>Shop Gifts</button>
+          <div className="mt-[20px]">
+            <button className="button button-elevated">Shop Gifts</button>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -7,12 +7,16 @@ export default function IphoneBlock() {
       <IphoneComponent
         img="iphone_pro16.jpg"
         title="iPhone 16 Pro"
-        button_color="blue"
+        theme="dark"
+        button1="primary"
+        button2="tertiary"
       ></IphoneComponent>
       <IphoneComponent
         img="iphone_pro.jpg"
         title="iPhone 16"
-        button_collor="white"
+        theme="dark"
+        button1="neutral"
+        button2="tertiary-neutral"
       ></IphoneComponent>
     </div>
   );
