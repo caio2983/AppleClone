@@ -9,7 +9,7 @@ import React from "react";
 import SquaresBlock from "./components/SquaresBlock/squares";
 import SwiperComponent from "./components/Swiper/swiper";
 
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 

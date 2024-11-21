@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  EffectCoverflow,
-} from "swiper/modules";
+import { Navigation, Pagination, Scrollbar, EffectCoverflow } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
