@@ -33,8 +33,33 @@ export default function SquareComponent(props) {
           {props.text}
         </p>
         <div id="iphone-buttons" className="flex flex-row gap-[8px]">
-          <button>Learn more</button>
-          <button>Buy</button>
+          <div className={props.theme === "dark" ? "theme-dark" : ""}>
+            <button
+              className={`button button-elevated ${
+                props.button1 === "tertiary" && "button-tertiary"
+              } ${props.button1 === "neutral" && "button-neutral"}`}
+            >
+              Learn more
+            </button>
+          </div>
+          <div className={props.theme === "dark" ? "theme-dark" : ""}>
+            <button
+              className={`button button-elevated ${
+                props.button2 === "tertiary" && "button-tertiary"
+              }
+                ${props.button2 === "tertiary-neutral" && "button-neutral"}
+                   ${
+                     props.button2 === "tertiary-neutral" &&
+                     "button-tertiary-neutral"
+                   }
+                      ${
+                        props.button2 === "tertiary-light" &&
+                        "button-tertiary-light"
+                      }`}
+            >
+              Buy
+            </button>
+          </div>
         </div>
       </div>
     </div>

@@ -10,6 +10,9 @@ export default function SquaresBlock() {
         title: "",
         text: "Two sizes. Faster chip. Does it all.",
         textColor: "dark",
+        button1: "",
+        button2: "tertiary-light",
+        theme: "dark",
       },
       {
         imgs: ["/promo/airPods/airPods_bg.jpg"],
