@@ -1,5 +1,11 @@
 import React from "react";
-import { Navigation, Pagination, Scrollbar, EffectCoverflow } from "swiper";
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  EffectCoverflow,
+  Parallax,
+} from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -56,16 +62,25 @@ export default function SwiperComponent() {
   return (
     <div>
       <Swiper
-        modules={[Navigation, Pagination, Scrollbar, EffectCoverflow]}
+        modules={[Navigation, Pagination, Scrollbar, EffectCoverflow, Parallax]}
         spaceBetween={30}
         slidesPerView={1.2}
-        navigation
         centeredSlides={true}
         scrollbar={{ draggable: true }}
         onSwiper={(swiper) => console.log(swiper)}
         loop={true}
-        speed={1000}
+        speed={1300}
         slideToClickedSlide={true}
+        pagination={{
+          type: "bullets",
+          clickable: true,
+          dynamicBullets: true,
+        }}
+        parallax={true}
+        style={{
+          paddingBottom: "30px",
+          paddintTop: "30px",
+        }}
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
