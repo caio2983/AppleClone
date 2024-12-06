@@ -5,7 +5,7 @@ import {
   Scrollbar,
   EffectCoverflow,
   Parallax,
-} from "swiper";
+} from "swiper/modules";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
