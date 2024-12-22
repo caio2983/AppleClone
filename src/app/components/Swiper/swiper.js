@@ -5,6 +5,7 @@ import {
   Scrollbar,
   EffectCoverflow,
   Parallax,
+  Autoplay,
 } from "swiper/modules";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -76,6 +77,7 @@ export default function SwiperComponent() {
           clickable: true,
           dynamicBullets: true,
         }}
+        preventClicks={false}
         parallax={true}
         style={{
           paddingBottom: "30px",
