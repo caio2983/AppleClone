@@ -19,6 +19,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { useSwiper } from "swiper/react";
+import SwiperSmallComponent from "./components/Swiper/swiperSmall";
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
       <IphoneBlock></IphoneBlock>
       <SquaresBlock></SquaresBlock>
       <SwiperComponent></SwiperComponent>
+      <SwiperSmallComponent></SwiperSmallComponent>
     </div>
   );
 }
