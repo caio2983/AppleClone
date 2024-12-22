@@ -22,6 +22,13 @@
   }
 }
 
+.swiper-small {
+  .swiper-slide {
+    opacity: 1 !important;
+    filter: brightness(1) !important;
+  }
+}
+
 body {
   color: var(--foreground);
   background: var(--background);

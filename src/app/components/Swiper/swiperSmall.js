@@ -46,7 +46,7 @@ export default function SwiperSmallComponent() {
           disableOnInteraction: false,
           pauseOnMouseEnter: false,
         }}
-        className="swiper-transition"
+        className="swiper-transition swiper-small"
         speed={5000}
         scrollbar={{ draggable: false }}
         centeredSlides={true}
