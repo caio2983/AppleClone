@@ -78,6 +78,26 @@ body {
   width: fit-content;
 }
 
+.swiper-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.swiper-overlay-active {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
 .flyout-open {
   position: fixed;
   z-index: 1500000000;

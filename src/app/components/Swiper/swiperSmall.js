@@ -10,6 +10,7 @@ import "swiper/css/scrollbar";
 export default function SwiperSmallComponent() {
   const [swiperInstance, setSwiperInstance] = useState(null);
   const [isPaused, setPaused] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(null);
 
   const slides = [
     { img: "/slides/slidesSmall/HelloKitty.jpg", text: [] },
@@ -24,17 +25,18 @@ export default function SwiperSmallComponent() {
     { img: "/slides/slidesSmall/HelloKitty.jpg", text: [] },
   ];
 
-  const handleMouseOver = () => {
+  const handleMouseOver = (index) => {
     if (swiperInstance) {
       console.log(swiperInstance);
       swiperInstance.setTransition(0);
-
+      setActiveIndex(index);
       swiperInstance.autoplay.stop();
     }
   };
 
   const handleMouseOut = () => {
     if (swiperInstance && isPaused == false) {
+      setActiveIndex(null);
       swiperInstance.autoplay.start();
     }
   };
@@ -77,19 +79,22 @@ export default function SwiperSmallComponent() {
         {slides.map((slide, index) => (
           <SwiperSlide
             key={index}
-            className="h-[240px] w-[420px] brightness-100"
+            className="h-[240px] w-[420px] brightness-100 opacity-5"
           >
-            <div
-              className="h-[240px] w-[420px]"
-              onMouseOver={handleMouseOver}
-              onMouseOut={handleMouseOut}
-            >
+            <div className="h-[240px] w-[420px]">
               <img
                 src={slide.img}
                 alt={`Slide ${index}`}
                 className="h-full w-full block"
               />
             </div>
+            <div
+              onMouseOver={() => handleMouseOver(index)}
+              onMouseOut={handleMouseOut}
+              className={`swiper-overlay ${
+                activeIndex === index ? "swiper-overlay-active" : ""
+              }`}
+            ></div>
           </SwiperSlide>
         ))}
       </Swiper>
