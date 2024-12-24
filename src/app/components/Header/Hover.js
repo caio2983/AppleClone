@@ -35,6 +35,7 @@ export default function HoverComponent({ children, label, onHover }) {
     <div
       onMouseOver={() => setHovered(true)}
       onMouseOut={() => setHovered(false)}
+      className=" w-full h-full flex items-center"
     >
       <span>{label}</span>
       <AnimatePresence>
