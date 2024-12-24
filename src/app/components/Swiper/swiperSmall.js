@@ -35,8 +35,8 @@ export default function SwiperSmallComponent() {
   };
 
   const handleMouseOut = () => {
+    setActiveIndex(null);
     if (swiperInstance && isPaused == false) {
-      setActiveIndex(null);
       swiperInstance.autoplay.start();
     }
   };
@@ -66,7 +66,7 @@ export default function SwiperSmallComponent() {
           delay: 0,
         }}
         className="swiper-transition swiper-small"
-        speed={1000}
+        speed={4000}
         scrollbar={{ draggable: false }}
         centeredSlides={true}
         loop={true}
