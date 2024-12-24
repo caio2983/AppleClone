@@ -9,6 +9,7 @@ import "swiper/css/scrollbar";
 
 export default function SwiperSmallComponent() {
   const [swiperInstance, setSwiperInstance] = useState(null);
+  const [isPaused, setPaused] = useState(false);
 
   const slides = [
     { img: "/slides/slidesSmall/HelloKitty.jpg", text: [] },
@@ -33,8 +34,22 @@ export default function SwiperSmallComponent() {
   };
 
   const handleMouseOut = () => {
-    if (swiperInstance) {
+    if (swiperInstance && isPaused == false) {
       swiperInstance.autoplay.start();
+    }
+  };
+
+  const handleClick = () => {
+    if (swiperInstance) {
+      if (!isPaused) {
+        swiperInstance.setTransition(0);
+        swiperInstance.autoplay.stop();
+        setPaused(true);
+      } else {
+        swiperInstance.setTransition(0);
+        swiperInstance.autoplay.start();
+        setPaused(false);
+      }
     }
   };
 
@@ -78,6 +93,7 @@ export default function SwiperSmallComponent() {
           </SwiperSlide>
         ))}
       </Swiper>
+      <button onClick={handleClick}>Click</button>
     </div>
   );
 }
