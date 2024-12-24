@@ -82,19 +82,19 @@ export default function SwiperSmallComponent() {
             className="h-[240px] w-[420px] brightness-100 opacity-5"
           >
             <div className="h-[240px] w-[420px]">
+              <div
+                onMouseOver={() => handleMouseOver(index)}
+                onMouseOut={handleMouseOut}
+                className={`swiper-overlay ${
+                  activeIndex === index ? "swiper-overlay-active" : ""
+                }`}
+              ></div>
               <img
                 src={slide.img}
                 alt={`Slide ${index}`}
                 className="h-full w-full block"
               />
             </div>
-            <div
-              onMouseOver={() => handleMouseOver(index)}
-              onMouseOut={handleMouseOut}
-              className={`swiper-overlay ${
-                activeIndex === index ? "swiper-overlay-active" : ""
-              }`}
-            ></div>
           </SwiperSlide>
         ))}
       </Swiper>
